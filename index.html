@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Este é um codificador de textos. Foi proposto e desenvolvido durante o curso de front-end, proporcionado pela parceria Alura-Oracle.">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="reset-css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="javascript/script.js" defer></script>
+		<title>Alura Challenger - Criptografando e Descriptografando textos</title>
+	</head>
+
+	<body>
+		
+		<main class="container" >
+			<section>
+				<header>
+					<img src="imagens/logo-alura.png" alt="Logo Alura">
+				</header>
+
+				<div class="texto-esquerda" >
+					<input class="caixa-texto-esquerda" type="text" name="recuperaTexto" id="limpar" style="color: #0A3871" required placeholder= "Digite seu texto">
+					<input class="btnLimparTexto" type="reset" value="Limpar" onclick="limparTexto()" id="recarregar">
+				</div>
+
+				<p class="info">&#128712;Apenas letras minúsculas e sem acento.</p>
+				<div class="botoes-cript" >
+					
+
+					<button class="criptografar-botao" type="button" onclick="Evento1()" id="criptografar">Criptografar</button>
+					<button class="descriptografar-botao" type="button" onclick="Evento2()" id="descriptografar">Descriptografar</button>
+
+				</div>
+			</section>
+
+			<section class="caixa-direita">
+				<img class="img-eistein" src="imagens/pesquisa.png" alt="logo, pessoa com uma lupa">
+				<h1 class="msg-encontrada">Texto logo abaixo</h1>
+				<br>
+				<textarea class="msg-txtarea" id="txtAr" name="name" rows="5" cols="80">Digite um texto que você deseja criptografar ou descriptografar.</textarea>
+				<button class="botaoCopiar" onclick="copiarTxt()" id="recarregar" > Copiar </button>
+			</section>
+		</main>
+
+	</body>
+
+</html>
